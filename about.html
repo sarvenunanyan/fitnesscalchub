@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — FitnessCalcHub.net</title>
+<meta name="description" content="FitnessCalcHub provides free, science-based health and fitness calculators including BMI, calories, ideal weight, body fat and more.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#b8f400">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#050a0e; --surface:#0a1520; --card:#0d1c2e; --border:#1a3a5c; --lime:#b8f400; --lime-dark:#8fc200; --lime-dim:#2d3d00; --cyan:#00d4ff; --text:#e8f4f8; --text-muted:#5a8fa8; --text-dim:#1e4060; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--text); font-family:'Barlow',sans-serif; font-weight:300; }
+  .bg-grid { position:fixed; inset:0; background-image:linear-gradient(rgba(0,212,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.03) 1px,transparent 1px); background-size:40px 40px; pointer-events:none; z-index:0; }
+  header { position:relative; z-index:10; padding:0 40px; height:70px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); background:rgba(5,10,14,0.92); backdrop-filter:blur(20px); }
+  .logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .logo-icon { width:38px; height:38px; background:var(--lime); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; }
+  .logo-text { font-family:'Bebas Neue',cursive; font-size:1.6rem; letter-spacing:0.05em; color:var(--text); }
+  .logo-text span { color:var(--lime); }
+  .content { position:relative; z-index:1; max-width:760px; margin:0 auto; padding:60px 24px 100px; }
+  h1 { font-family:'Bebas Neue',cursive; font-size:3rem; letter-spacing:0.04em; margin-bottom:16px; line-height:1; }
+  h1 span { color:var(--lime); }
+  h2 { font-family:'Barlow Condensed',sans-serif; font-size:1.1rem; font-weight:700; color:var(--lime); margin:40px 0 14px; letter-spacing:0.04em; text-transform:uppercase; }
+  p { color:var(--text-muted); line-height:1.9; font-size:0.95rem; margin-bottom:16px; }
+  strong { color:var(--text); font-weight:600; }
+  .calc-list { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:20px 0; }
+  .calc-item { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; font-size:0.88rem; }
+  .calc-item strong { color:var(--lime); display:block; margin-bottom:4px; }
+  .calc-item span { color:var(--text-muted); }
+  .disclaimer { background:rgba(184,244,0,0.05); border-left:2px solid var(--lime); border-radius:0 10px 10px 0; padding:18px 22px; margin-top:32px; }
+  .disclaimer p { margin:0; font-size:0.88rem; }
+  .pwa-note { background:rgba(0,212,255,0.05); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-top:24px; display:flex; gap:16px; align-items:flex-start; }
+  .pwa-note-icon { font-size:2rem; flex-shrink:0; }
+  .pwa-note h4 { font-family:'Barlow Condensed',sans-serif; font-weight:700; color:var(--cyan); margin-bottom:6px; }
+  .pwa-note p { margin:0; font-size:0.85rem; }
+  footer { position:relative; z-index:1; border-top:1px solid var(--border); padding:28px 40px; display:flex; justify-content:space-between; }
+  footer p, footer a { font-size:0.75rem; color:var(--text-dim); text-decoration:none; }
+  footer a:hover { color:var(--lime); }
+  @media(max-width:768px) { header{padding:0 16px} .calc-list{grid-template-columns:1fr} footer{flex-direction:column;gap:10px} }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<header>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">💪</div>
+    <span class="logo-text">Fitness<span>CalcHub</span></span>
+  </a>
+</header>
+<div class="content">
+  <h1>About <span>FitnessCalcHub</span></h1>
+  <p>FitnessCalcHub.net is a free, science-based health and fitness calculator platform. We built it because understanding your body shouldn't require a medical degree or an expensive app subscription.</p>
+  <p>Every calculator uses validated, peer-reviewed formulas trusted by healthcare professionals worldwide. Enter your numbers, get instant personalized results — no signup, no data collection, completely free.</p>
+
+  <div class="pwa-note">
+    <div class="pwa-note-icon">📱</div>
+    <div>
+      <h4>Available as a Mobile App</h4>
+      <p>FitnessCalcHub works as a Progressive Web App. On your phone, tap "Add to Home Screen" to install it like a native app — works offline too!</p>
+    </div>
+  </div>
+
+  <h2>Our Calculators</h2>
+  <div class="calc-list">
+    <div class="calc-item"><strong>⚖️ BMI Calculator</strong><span>WHO-standard Body Mass Index with health category assessment</span></div>
+    <div class="calc-item"><strong>🔥 Calorie Calculator</strong><span>Daily calorie needs using the Mifflin-St Jeor equation (TDEE)</span></div>
+    <div class="calc-item"><strong>🎯 Ideal Weight</strong><span>Devine formula with small, medium and large frame adjustments</span></div>
+    <div class="calc-item"><strong>💧 Water Intake</strong><span>Daily hydration needs based on weight, activity and climate</span></div>
+    <div class="calc-item"><strong>📊 Body Fat %</strong><span>US Navy circumference method estimation</span></div>
+    <div class="calc-item"><strong>🚶 Daily Steps</strong><span>Personalised step goals by age, fitness level and target</span></div>
+  </div>
+
+  <div class="disclaimer">
+    <p><strong style="color:var(--lime)">Medical Disclaimer:</strong> FitnessCalcHub provides estimates for informational and educational purposes only. Results are not a substitute for professional medical advice. Always consult a qualified healthcare provider before making health or fitness decisions.</p>
+  </div>
+</div>
+<footer>
+  <p>© 2025 FitnessCalcHub.net — Free health calculators</p>
+  <div style="display:flex;gap:20px"><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div>
+</footer>
+</body>
+</html>
